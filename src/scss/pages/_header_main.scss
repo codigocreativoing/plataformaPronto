@@ -95,10 +95,61 @@
       }
     }
   }
-  &configuracion{
-    background-color: palegreen;
+  &-configuracion{
+    .cajaConte{
+      background-color: #CACACA;
+      border: 1px solid #333333;
+      border-radius: 1.5rem;
+      margin: .7rem 0;
+      input{
+        width: 7rem;
+      }
+      .titulo{
+        background-color: #333333;
+        border-radius: 1.5rem 1.5rem 0 0;
+        padding: .5rem 0 .5rem 1rem;
+      }
+      .contenido{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        .linea, .lineaEsp{
+          // width: 50%;
+          display: flex;
+          justify-content: space-between;
+          &-texto{
+            // background-color: brown;
+            width: 60%;
+            margin-left: 1rem;
+          }
+          &-caja{
+            width: 40%;
+            margin-left: 1rem;
+          }
+        }
+      }
+      .instructivo{
+        padding: .5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+      }
+      .boton{
+        padding: .5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
   }
   i{
     color: #8AC43F;
+  }
+  h3{
+    color: #CACACA;
   }
 }

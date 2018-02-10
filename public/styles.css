@@ -2503,9 +2503,45 @@ a {
         justify-content: space-between;
         align-content: center;
         padding: 1rem; }
-  .headerContainerconfiguracion {
-    background-color: palegreen; }
+  .headerContainer-configuracion .cajaConte {
+    background-color: #CACACA;
+    border: 1px solid #333333;
+    border-radius: 1.5rem;
+    margin: .7rem 0; }
+    .headerContainer-configuracion .cajaConte input {
+      width: 7rem; }
+    .headerContainer-configuracion .cajaConte .titulo {
+      background-color: #333333;
+      border-radius: 1.5rem 1.5rem 0 0;
+      padding: .5rem 0 .5rem 1rem; }
+    .headerContainer-configuracion .cajaConte .contenido {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0; }
+      .headerContainer-configuracion .cajaConte .contenido .linea, .headerContainer-configuracion .cajaConte .contenido .lineaEsp {
+        display: flex;
+        justify-content: space-between; }
+        .headerContainer-configuracion .cajaConte .contenido .linea-texto, .headerContainer-configuracion .cajaConte .contenido .lineaEsp-texto {
+          width: 60%;
+          margin-left: 1rem; }
+        .headerContainer-configuracion .cajaConte .contenido .linea-caja, .headerContainer-configuracion .cajaConte .contenido .lineaEsp-caja {
+          width: 40%;
+          margin-left: 1rem; }
+    .headerContainer-configuracion .cajaConte .instructivo {
+      padding: .5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: bold; }
+    .headerContainer-configuracion .cajaConte .boton {
+      padding: .5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: bold; }
   .headerContainer i {
     color: #8AC43F; }
-  .headerContainer .boton {
-    cursor: pointer; }
+  .headerContainer h3 {
+    color: #CACACA; }

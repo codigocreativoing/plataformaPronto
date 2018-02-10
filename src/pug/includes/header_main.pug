@@ -60,26 +60,26 @@
       .detApuestas-detalle
         img(src="./images/apuestas.jpg", alt="boceto de data" width="800")
   .headerContainer-configuracion
-    .configCupon
+    .configCupon.cajaConte
       .titulo
-      h3 Cupón
-      .configCupon-contenido
+        h3 Cupón
+      .contenido
         .linea
           .linea-texto
             p Quick Bet:
           .linea-caja
             input(type="text" name="ig")
-        .lineaEsp
-          .lineaEsp-texto
+        .linea
+          .linea-texto
             p Cuotas:
-          .lineaEsp-caja
+          .linea-caja.esp
             input(type="text" name="ig")
       .instructivo
         p Haga click en una cuota para insertarla en el cupón
-    .configAuto
+    .configAuto.cajaConte
       .titulo
-      h3 Apuesta Automática
-      .configAuto-contenido
+        h3 Apuesta Automática
+      .contenido
         .linea
           .linea-texto
             p Valor a apostar
@@ -97,15 +97,16 @@
             input(type="text" name="ig")
       .boton
         input(type="button", value="calcular")
-    .configReser
+    .configReser.cajaConte
       .titulo
-      h3 Apuesta Reservada
+        h3 Apuesta Reservada
       .instructivo
         p ipo ID apuesta reservada para cargar en el carrito
-      .linea
-        .linea-texto
-          p Apuesta ID
-        .linea-caja
-          input(type="text" name="ig")
+      .contenido
+        .linea
+          .linea-texto
+            p Apuesta ID
+          .linea-caja
+            input(type="text" name="ig")
       .boton
         input(type="button", value="Recalcular")
