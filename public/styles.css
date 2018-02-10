@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url(./vendors/googlefonts.css);
+/**
+*   @fileoverview
+*     Componente para aplicar un reseteo de estilos básicos al documento, aplica las siguientes reglas:
+*       * box-sizing: border-box; al documento HTML y todos sus elementos
+*       * padding y margin de todos los elementos a cero
+*       * Evita barras de desplazamiento horizontal al body del documento, múy útil para el Responsive Design
+*       * Asigna la fuente tipográfica y el tamaño base de fuente para el documento HTML
+*     Dependencias: Ninguna
+*
+*   @param {String} $font, nombre de la fuente base del proyecto
+*   @param {String} $font-size, tamaño de la fuente del elemento raíz (html)
+*
+*   @returns {void} no retorna nada
+*
+*   @author Andrés Gómez <andresg2409@gmail.com>
+*   @version 1.0.0
+*/
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+a {
+  list-style: none;
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+h1 {
+  font-size: 2.25rem;
+  font-family: "Oswald", sans-serif; }
+  @media screen and (min-width: 720px) {
+    h1 {
+      font-size: 2.25rem; } }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 3.375rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif; }
+  @media screen and (min-width: 720px) {
+    h2 {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    h2 {
+      font-size: 2.25rem; } }
+
+h3 {
+  font-size: 0.66667rem;
+  font-family: "Roboto", sans-serif;
+  color: #9c99ae; }
+  @media screen and (min-width: 720px) {
+    h3 {
+      font-size: 0.66667rem; } }
+  @media screen and (min-width: 1024px) {
+    h3 {
+      font-size: 1rem; } }
+
+p {
+  line-height: 24px;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  font-family: "Roboto", sans-serif; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 15% 25% 60%; }
+  .hero-img {
+    grid-row: 1 / 4;
+    grid-column: 1 / -1; }
+  .hero-logo {
+    grid-row: 2;
+    grid-column: 1 / -1; }
+  .hero-wait {
+    grid-row: 1;
+    grid-column: 1; }
+  .hero-interface {
+    grid-row: 3;
+    grid-column: 1 / -1; }
+
+body {
+  background-image: url("./images/fondoV.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  object-fit: cover;
+  color: #fff; }
+
+.hero {
+  height: 100vh; }
+  .hero-logo {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center; }
+  .hero-wait {
+    display: flex;
+    flex-wrap: wrap; }
+    .hero-wait--title {
+      width: 100%;
+      text-align: center;
+      margin: 0 0 .5rem 0; }
+      .hero-wait--title .titlePrincipal {
+        opacity: 0; }
+  .hero-interface {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5rem; }

@@ -1,0 +1,14 @@
+/* Andrés Gómez - Ingeniero de Sistemas & Front-End developer - http://andresgomez.com */
+
+/* TEAM */
+	Design and Programming: Andrés Gómez
+	Contact: andresg2409 [at] gmail.com
+	Twitter: @andresChes
+	From: Villavicencio, Colombia
+
+/* SITE */
+	Last update: 2017/21/06
+	Language: Español
+	Standars: HTML5, CSS3, JavaScript, Node.js, NPM
+	Components: animate.css, font-awesome, jquery, owl.carousel, wowjs, babel-preset-es2015, browser-sync, imagemin-pngquant, onchange, parallelshell
+Software: VisualStudio Code, Chrome, Windows 10

@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url(./vendors/googlefonts.css);
+/**
+*   @fileoverview
+*     Componente para aplicar un reseteo de estilos básicos al documento, aplica las siguientes reglas:
+*       * box-sizing: border-box; al documento HTML y todos sus elementos
+*       * padding y margin de todos los elementos a cero
+*       * Evita barras de desplazamiento horizontal al body del documento, múy útil para el Responsive Design
+*       * Asigna la fuente tipográfica y el tamaño base de fuente para el documento HTML
+*     Dependencias: Ninguna
+*
+*   @param {String} $font, nombre de la fuente base del proyecto
+*   @param {String} $font-size, tamaño de la fuente del elemento raíz (html)
+*
+*   @returns {void} no retorna nada
+*
+*   @author Andrés Gómez <andresg2409@gmail.com>
+*   @version 1.0.0
+*/
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden; }
+
+a {
+  list-style: none;
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+h1 {
+  font-size: 2.25rem;
+  font-family: "Oswald", sans-serif; }
+  @media screen and (min-width: 720px) {
+    h1 {
+      font-size: 2.25rem; } }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 3.375rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif; }
+  @media screen and (min-width: 720px) {
+    h2 {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    h2 {
+      font-size: 2.25rem; } }
+
+h3 {
+  font-size: 0.66667rem;
+  font-family: "Roboto", sans-serif;
+  color: #9c99ae; }
+  @media screen and (min-width: 720px) {
+    h3 {
+      font-size: 0.66667rem; } }
+  @media screen and (min-width: 1024px) {
+    h3 {
+      font-size: 1rem; } }
+
+p {
+  line-height: 24px;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  font-family: "Roboto", sans-serif; }
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  max-width: 20rem;
+  margin: 0 auto; }
+
+.countdown__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  min-width: 31%;
+  margin-bottom: 1rem; }
+
+.countdown__item--large {
+  flex: auto;
+  width: 100%; }
+
+.countdown__timer {
+  padding: .25em;
+  background-color: rgba(64, 64, 64, 0.6);
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.countdown__label {
+  font-size: 1em;
+  padding-top: .40em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.dias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; }
+
+.numDias {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body {
+  color: #fff; }
+  body .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    object-fit: contain;
+    z-index: 100; }
+    body .container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(64, 64, 64, 0.9); }
+
+.hero {
+  height: 100vh;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 200; }
+  .hero-logo {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; }
+  .hero-wait {
+    display: flex;
+    flex-wrap: wrap; }
+    .hero-wait--title {
+      width: 100%;
+      text-align: center;
+      margin: 0 0 .5rem 0; }
+      .hero-wait--title .titlePrincipal {
+        opacity: 0;
+        margin-top: -4.5rem; }
+    .hero-wait--counter {
+      width: 100%; }
+  .hero-phrase {
+    width: 100%; }
+    .hero-phrase .phraseSlogan {
+      text-align: center; }
+  .hero-powered {
+    width: 100%;
+    font-style: italic;
+    text-align: right; }
+    .hero-powered .poweredby {
+      color: #d4d4d4; }
+      .hero-powered .poweredby span {
+        text-transform: uppercase; }
+
+@media screen and (min-width: 720px) {
+  body .container {
+    background-position-x: center;
+    background-position-y: center; }
+    body .container::after {
+      background-color: rgba(64, 64, 64, 0.6); }
+  .hero-logo {
+    margin-left: 10%;
+    justify-content: flex-start; }
+  .hero-phrase {
+    height: 5rem;
+    margin-left: -15rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(64, 64, 64, 0.8); }
+    .hero-phrase .phraseSlogan {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; } }
+
+@media screen and (min-width: 1024px) {
+  .hero-phrase {
+    height: 5rem;
+    margin-left: -15rem; } }

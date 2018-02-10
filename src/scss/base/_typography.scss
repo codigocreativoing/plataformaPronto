@@ -1,0 +1,88 @@
+//@import "./reset";
+//ratios
+$normal: 1.5;
+$aureo: 1.618;
+
+
+$line-height:24px;
+$base: 1rem;
+$ratio: $normal;
+$normal: $base;
+$t3: $base * $ratio;
+$t2: $t3 * $ratio;
+$t1: $t2 * $ratio;
+$xl: $t1 * $ratio;
+$xxl: $xl * $ratio;
+$small: $base / $ratio;
+
+//-h1=xl
+//-h2=t2
+//-h3=t3
+//-h4=
+// ===========================================
+// ============ h1 ===========================
+// ===========================================
+// @mixin t1 {
+//   line-height: $line-height;
+//   margin: $line-height / 4.5 0 ;
+//   font-size: $t3;
+//   @include mediaQuery(medium){
+//     font-size: $t2;
+//     line-height: $line-height * 1.5;
+//     margin: $line-height / 4 0 ;
+//   }
+//   @media screen and(min-width: 720px) {
+//     font-size: $t1;
+//     line-height: $line-height * 3;
+//     margin: $line-height / 3.5 0 ;
+//   }
+//   @media screen and(min-width: 1920px) {
+//     font-size: $xl;
+//     line-height: $line-height * 4;
+//     margin: $line-height / 3 0;
+//   }
+// }
+// ===========================================
+// ============ h2 ===========================
+// ===========================================
+
+@mixin t1 {
+  font-size: $t2;
+  // line-height: $line-height;
+  // margin: $line-height / 5 0;
+  @include mediaQuery(mediumS){
+    font-size: $t2;
+    // line-height: $line-height * 1.5;
+    // margin: $line-height / 4.5 0;
+  }
+  @include mediaQuery(wideS){
+    font-size: $t1;
+    // line-height: $line-height * 2;
+    // margin: $line-height / 3.5 0;
+  }
+}
+@mixin t2 {
+  font-size: $t3;
+  // line-height: $line-height;
+  // margin: $line-height / 5 0;
+  @include mediaQuery(mediumS){
+    font-size: $t3;
+  }
+  @include mediaQuery(wideS){
+    font-size: $t2;
+  }
+}
+@mixin t3 {
+  font-size: $small;
+  // line-height: $line-height;
+  // margin: $line-height / 5 0;
+  @include mediaQuery(mediumS){
+    font-size: $small;
+  }
+  @include mediaQuery(wideS){
+    font-size: $normal;
+  }
+}
+
+
+

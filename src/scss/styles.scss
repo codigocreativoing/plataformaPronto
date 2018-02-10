@@ -1,0 +1,46 @@
+//- TODO: este es el único archivo de scss que no inicia con "_" guión bajo y solo contiene $import y comentarios
+//- TODO: El siguiente es el orden de importar los archivos
+
+//carpeta utilities
+@import
+'./utilities/variables',
+'./utilities/functions',
+'./utilities/mixins',
+'./utilities/colors';
+// En esta sección se importan todas los archivos que contienen herramientas de terceros "VENDORS"
+//carpeta vendors
+@import
+'./vendors/googlefonts.css';
+
+// carpeta base
+@import
+'./base/reset',
+'./base/typography',
+'./base/general';
+
+// carpeta layout
+@import
+'./layout/_grid.scss';
+// './layout/hero';
+
+// carpeta components
+// @import
+// './components/_count_down';
+// './components/navigation_off_canvas',
+// './components/phrase_hero',
+// './components/header_title',
+// './components/titles_pack',
+// './components/title_links',
+// './components/box_info',
+// './components/_box_info_images.scss',
+// './components/_banner_link.scss',
+// './components/_ligth_box.scss',
+// './components/_galeria.scss',
+// './components/_site_info',
+// './components/_slider',
+// './components/_modal',
+// './components/_modal_historia';
+
+// carpeta pages
+@import
+'./pages/hero';

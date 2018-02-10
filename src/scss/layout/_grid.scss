@@ -1,0 +1,27 @@
+.hero{
+  //height: 100vh;
+  // background-color: darkgoldenrod;
+  display              : grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 15% 25% 60%;
+  &-img{
+    grid-row: 1 / 4;
+    grid-column: 1 / -1;
+  }
+  &-logo{
+    // background-color: darkgreen;
+    // height: 50%;
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+  &-wait{
+    // background-color: darkmagenta;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  &-interface{
+    // background-color: darkred;
+    grid-row: 3;
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,14 @@
+mixin countDown()
+  .countdown#js-countdown
+    .countdown__item.countdown__item--large
+      .countdown__timer.numDias.js-countdown-days(aria-labelledby='day-countdown')
+      .countdown__label.dias#day-countdown Días
+    .countdown__item
+      .countdown__timer.js-countdown-hours(aria-labelledby="hour-countdown")
+      .countdown__label#hour-countdown Horas
+    .countdown__item
+      .countdown__timer.js-countdown-minutes(aria-labelledby="minute-countdown")
+      .countdown__label#minute-countdown Minutos
+    .countdown__item
+      .countdown__timer.js-countdown-seconds(aria-labelledby="second-countdown")
+      .countdown__label#second-countdown Segundos

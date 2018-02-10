@@ -1,0 +1,131 @@
+body{
+  background-image: url('./images/fondoV.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  object-fit: cover;
+  color: $clTextoGen;
+}
+.hero{
+
+  height: 100vh;
+  // margin: 0 ;
+  // @include centerFlex;
+  // flex-wrap: wrap;
+  // z-index: 200;
+  &-logo{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    // background-color: red;
+    // background-color:red ;
+    // margin-top: 5%;
+    // height: 10%;
+    // @include centerFlex;
+    // z-index: 10000;
+  }
+  &-wait{
+    display: flex;
+    flex-wrap: wrap;
+    &--title{
+      // background-color: olivedrab;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 .5rem 0;
+      .titlePrincipal{
+        opacity: 0;
+        // margin-top: -4.5rem;
+      }
+    }
+  }
+  &-interface{
+    display: flex;
+    justify-content: flex-end;
+    // align-items: center;
+    margin-right: 0.5rem;
+  }
+}
+// ===========================================================================
+// ==================== 720 ==================================================
+// ===========================================================================
+
+// @include mediaQuery(mediumS){
+// body{
+//   .container{
+//   background-position-x: center;
+//   background-position-y: center;
+//     &::after{
+//       background-color: rgba(64, 64, 64, .6);
+//     }
+//   }
+// }
+//   .hero{
+//     &-logo{
+//     // background-color:red ;
+//       margin-left: 10%;
+//       justify-content: flex-start;
+//     }
+//     &-wait{
+//       &--title{
+//         // background-color: olivedrab;
+//         .titlePrincipal{
+//         }
+//       }
+//       &--counter{
+//         // background-color: slateblue;
+//       }
+//     }
+//     &-phrase{
+//       height: 5rem;
+//       margin-left: -15rem;
+//       display: flex;
+//       justify-content: flex-end;
+//       align-items: center;
+//       background-color: rgba(64, 64, 64, .8);
+//       .phraseSlogan{
+//         height: 100%;
+//         // background-color: blue;
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-end;
+//       }
+//     }
+//   }
+// }
+// // ===========================================================================
+// // ==================== 1024 =================================================
+// // ===========================================================================
+
+// @include mediaQuery(wideS){
+//   .hero{
+//     &-logo{
+//     }
+
+//     &-wait{
+//       // background-color: pink;
+//     // display: flex;
+//     // flex-wrap: wrap;
+//       &--title{
+//         // background-color: olivedrab;
+//         // width: 100%;
+//         // text-align: center;
+//         // margin: 0 0 .5rem 0;
+//         .titlePrincipal{
+//           // margin-left: -300vw;
+//         }
+//       }
+//       &--counter{
+//         // background-color: slateblue;
+//         // width: 100%;
+//       }
+//     }
+//     &-phrase{
+//       height: 5rem;
+//       margin-left: -15rem;
+//       .phraseSlogan{
+//         // margin-left: 10rem;
+//       }
+//     }
+
+//   }
+// }

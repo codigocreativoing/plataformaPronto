@@ -1,0 +1,24 @@
+.hero{
+  display: grid;
+  grid-template-rows: 50% 10% 20% 15% 5%;
+  &-logo{
+    // background-color:red ;
+    grid-row: 1 / 2;
+  }
+  &-title{
+    // background-color: olivedrab;
+    grid-row: 2 / 3;
+  }
+  &-counter{
+    // background-color: slateblue;
+    grid-row: 3 / 4;
+  }
+  &-phrase{
+    // background-color: blue;
+    grid-row: 4 / 5;
+  }
+  &-powered{
+    // background-color: steelblue;
+    grid-row: 5 / -1;
+  }
+}
