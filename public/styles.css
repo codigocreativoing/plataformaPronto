@@ -2540,7 +2540,8 @@ a {
       justify-content: center;
       align-items: center;
       text-align: center;
-      font-weight: bold; }
+      font-weight: bold;
+      cursor: pointer; }
   .headerContainer i {
     color: #8AC43F; }
   .headerContainer h3 {
