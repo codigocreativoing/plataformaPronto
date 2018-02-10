@@ -22,26 +22,150 @@
     <meta name="application-name" content="Refugio del Zorzal">
     <meta name="owner" content="">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
   </head>
   <body>
-    <div class="container">
-      <header class="hero" id="inicio">
-        <div class="hero-logo">
-          <picture></picture><img src="./images/logo.png" alt="Logo" height="100">
-        </div>
-        <div class="hero-wait">
-          <div class="hero-wait--title">
-            <h1 class="titlePrincipal">HomeBet</h1>
-            <h2 class="title">¡Proximamente!</h2>
+    <div class="headerContainer">
+      <div class="headerContainer-encabezado">
+        <div class="ingreso">
+          <div class="ingreso-acceso">
+            <div class="ingreso-acceso__icono"><i class="fa fa-user"></i></div>
+            <div class="ingreso-acceso__entrada">
+              <input type="text" name="nombre">
+            </div>
+          </div>
+          <div class="ingreso-acceso">
+            <div class="ingreso-acceso__icono"><i class="fa fa-key"></i></div>
+            <div class="ingreso-acceso__entrada">
+              <input type="text" name="password">
+            </div>
+          </div>
+          <div class="boton">
+            <input type="button" value="INGRESAR">
           </div>
         </div>
-        <div class="hero-img">
-          <div class="fondo"></div>
+        <div class="anuncio">
+          <div class="logo"><img src="./images/logo.png" alt="logo hombet"></div>
         </div>
-        <div class="hero-interface">
-          <div class="inter"><img src="./images/interface.jpg" alt="presentacion interface de plataforma" height="150px"></div>
+        <div class="barra"></div>
+      </div>
+      <div class="headerContainer-navegacion">
+        <div class="eventos">
+          <h3>EVENTOS</h3>
+          <div class="eventos-cajas">
+            <div class="eventos-cajas__vivo">
+              <p>En vivo</p>
+            </div>
+            <div class="eventos-cajas__proximos">
+              <p>Próximos</p>
+            </div>
+            <div class="eventos-cajas__todos">
+              <p>Todos</p>
+            </div>
+          </div>
+          <div class="eventos-detalles">
+            <ul>
+              <li><a href="#">Apuestas Favoritas <i class="fa fa-star"></i></a></li>
+              <li><a href="#">Futbol</a></li>
+              <li><a href="#">Baloncesto</a></li>
+              <li><a href="#">Voleibol</a></li>
+              <li><a href="#">Boxeo</a></li>
+              <li><a href="#">MMA</a></li>
+              <li><a href="#">Tenis</a></li>
+              <li><a href="#">Futsal</a></li>
+              <li><a href="#">Beisbol</a></li>
+              <li><a href="#">Automovilismo</a></li>
+            </ul>
+          </div>
         </div>
-      </header>
+      </div>
+      <div class="headerContainer-apuestas">
+        <div class="slider"><img src="./images/slide.jpg" alt="slide de encabezado" width="800"></div>
+        <div class="detApuestas">
+          <div class="detApuestas-encabezado">
+            <h3>Próximos Eventos</h3><i class="fa fa-close"></i>
+          </div>
+          <div class="detApuestas-detalle"><img src="./images/apuestas.jpg" alt="boceto de data" width="800"></div>
+        </div>
+      </div>
+      <div class="headerContainer-configuracion">
+        <div class="configCupon">
+          <div class="titulo"></div>
+          <h3>Cupón</h3>
+          <div class="configCupon-contenido">
+            <div class="linea">
+              <div class="linea-texto">
+                <p>Quick Bet:</p>
+              </div>
+              <div class="linea-caja">
+                <input type="text" name="ig">
+              </div>
+            </div>
+            <div class="lineaEsp">
+              <div class="lineaEsp-texto">
+                <p>Cuotas:</p>
+              </div>
+              <div class="lineaEsp-caja">
+                <input type="text" name="ig">
+              </div>
+            </div>
+          </div>
+          <div class="instructivo">
+            <p>Haga click en una cuota para insertarla en el cupón</p>
+          </div>
+        </div>
+        <div class="configAuto">
+          <div class="titulo"></div>
+          <h3>Apuesta Automática</h3>
+          <div class="configAuto-contenido">
+            <div class="linea">
+              <div class="linea-texto">
+                <p>Valor a apostar</p>
+              </div>
+              <div class="linea-caja">
+                <input type="text" name="ig">
+              </div>
+            </div>
+            <div class="lineaEsp">
+              <div class="lineaEsp-texto">
+                <p>Cantidad de Eventos</p>
+              </div>
+              <div class="lineaEsp-caja">
+                <input type="text" name="ig">
+              </div>
+            </div>
+            <div class="linea">
+              <div class="linea-texto">
+                <p>¿Cuanto Quieres ganar?</p>
+              </div>
+              <div class="linea-caja">
+                <input type="text" name="ig">
+              </div>
+            </div>
+          </div>
+          <div class="boton">
+            <input type="button" value="calcular">
+          </div>
+        </div>
+        <div class="configReser">
+          <div class="titulo"></div>
+          <h3>Apuesta Reservada</h3>
+          <div class="instructivo">
+            <p>ipo ID apuesta reservada para cargar en el carrito</p>
+          </div>
+          <div class="linea">
+            <div class="linea-texto">
+              <p>Apuesta ID</p>
+            </div>
+            <div class="linea-caja">
+              <input type="text" name="ig">
+            </div>
+          </div>
+          <div class="boton">
+            <input type="button" value="Recalcular">
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>

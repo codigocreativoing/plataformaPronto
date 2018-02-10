@@ -1,0 +1,104 @@
+.headerContainer{
+  background-color: #4D4D4D;
+  &-encabezado{
+    // background-color: orangered;
+    .ingreso{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 2rem;
+      background-color: #333333;
+      &-acceso{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-around;
+        &__icono{
+          margin-right: 1rem;
+        }
+      }
+    }
+    .anuncio{
+      background-color: #4D4D4D;
+      .logo{
+        padding: 1rem 0;
+      }
+    }
+    .barra{
+      width: 100%;
+      height: 3rem;
+      background-color: #666666;
+    }
+  }
+  &-navegacion{
+    // background-color: #96BD12;
+    .eventos{
+      background-color: #96BD12;
+      h3{
+        padding-top: 1rem;
+        margin-left: 1rem;
+      }
+      &-cajas{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding-top: 1rem;
+        cursor: pointer;
+        // padding: 0 .5rem;
+        // width: 4rem;
+        &__vivo{
+          background-color: #979797;
+          width: 3.5rem;
+        }
+        &__proximos{
+          background-color: #979797;
+          width: 5rem;
+        }
+        &__todos{
+          background-color: #666666;
+          width: 3.5rem;
+
+        }
+      }
+      &-detalles{
+        background-color: #666666;
+        height: 100vh;
+        a{
+          color: $clTextoGen;
+          text-decoration: none;
+          // padding: 1rem;
+        }
+        li{
+          padding: 1rem 0 0 1rem;
+        }
+      }
+    }
+  }
+  &-apuestas{
+    // background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .slider{
+      text-align: center;
+      padding-top: .5rem;
+      margin-bottom: -3.5rem;
+    }
+    .detApuestas{
+      display: flex;
+      flex-direction: column;
+      background-color: #333333;
+      &-encabezado{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1rem;
+      }
+    }
+  }
+  &configuracion{
+    background-color: palegreen;
+  }
+  i{
+    color: #8AC43F;
+  }
+}

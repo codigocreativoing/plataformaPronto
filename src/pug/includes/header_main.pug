@@ -1,47 +1,111 @@
 .headerContainer
   .headerContainer-encabezado
     .ingreso
+      .ingreso-acceso
+        .ingreso-acceso__icono
+          i.fa.fa-user
+        .ingreso-acceso__entrada
+          input(type="text" name="nombre")
+      .ingreso-acceso
+        .ingreso-acceso__icono
+          i.fa.fa-key
+        .ingreso-acceso__entrada
+          input(type="text" name="password")
+      .boton
+        input(type="button", value="INGRESAR")
     .anuncio
+      .logo
+        img(src="./images/logo.png" alt="logo hombet")
     .barra
   .headerContainer-navegacion
     .eventos
+      h3 EVENTOS
       .eventos-cajas
         .eventos-cajas__vivo
+          p En vivo
         .eventos-cajas__proximos
+          p Próximos
         .eventos-cajas__todos
+          p Todos
       .eventos-detalles
+        //- ul>li*10>a[href='#']{deporte$}
+        ul
+          li
+            a(href="#") Apuestas Favoritas #[i.fa.fa-star]
+          li
+            a(href="#") Futbol
+          li
+            a(href="#") Baloncesto
+          li
+            a(href="#") Voleibol
+          li
+            a(href="#") Boxeo
+          li
+            a(href="#") MMA
+          li
+            a(href="#") Tenis
+          li
+            a(href="#") Futsal
+          li
+            a(href="#") Beisbol
+          li
+            a(href="#") Automovilismo
   .headerContainer-apuestas
     .slider
+      img(src="./images/slide.jpg", alt="slide de encabezado" width="800")
     .detApuestas
+      .detApuestas-encabezado
+        h3 Próximos Eventos
+        i.fa.fa-close
+      .detApuestas-detalle
+        img(src="./images/apuestas.jpg", alt="boceto de data" width="800")
   .headerContainer-configuracion
     .configCupon
-      .configCupon-titulo
+      .titulo
+      h3 Cupón
       .configCupon-contenido
         .linea
           .linea-texto
+            p Quick Bet:
           .linea-caja
+            input(type="text" name="ig")
         .lineaEsp
           .lineaEsp-texto
+            p Cuotas:
           .lineaEsp-caja
+            input(type="text" name="ig")
       .instructivo
+        p Haga click en una cuota para insertarla en el cupón
     .configAuto
-      .configAuto-titulo
+      .titulo
+      h3 Apuesta Automática
       .configAuto-contenido
         .linea
           .linea-texto
+            p Valor a apostar
           .linea-caja
+            input(type="text" name="ig")
         .lineaEsp
           .lineaEsp-texto
+            p Cantidad de Eventos
           .lineaEsp-caja
+            input(type="text" name="ig")
         .linea
           .linea-texto
+            p ¿Cuanto Quieres ganar?
           .linea-caja
-      .configAuto-boton
+            input(type="text" name="ig")
+      .boton
         input(type="button", value="calcular")
     .configReser
-    .instructivo
+      .titulo
+      h3 Apuesta Reservada
+      .instructivo
+        p ipo ID apuesta reservada para cargar en el carrito
       .linea
         .linea-texto
+          p Apuesta ID
         .linea-caja
-      .configAuto-boton
-        input(type="button", value="calcular")
+          input(type="text" name="ig")
+      .boton
+        input(type="button", value="Recalcular")
